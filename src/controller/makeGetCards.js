@@ -2,6 +2,7 @@
 export default function makeGetCards ( cardData ){
     
     return function getCards(){
+        console.log("controller");
         return cardData;
     }
     

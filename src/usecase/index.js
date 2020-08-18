@@ -1,4 +1,4 @@
-import makeGetCards from './listCard.js';
+import makeGetCards from './listCards.js';
 import getCards from '../data/db.js' 
 
 

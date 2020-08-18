@@ -1,8 +1,9 @@
 
 
-export default function makeGetCards(cardsdb){
-    return function listCards(){
-        cards = JSON.parse(cardsdb);
+export default function makeListCards(cardsdb){
+    return async function listCards(){
+        let cards = await cardsdb();
+        console.log("hello");
         return cards;
     }
 }

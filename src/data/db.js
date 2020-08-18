@@ -1,6 +1,11 @@
-import cardData from './magicCard.json'
+//import cardData from '../../magicCard.json'
 
 
-export default function getCards(query){
-    if (query === null) return cardData;
+export default function getCards(){
+    return {
+        "id":1,
+        "name":"Demonic Tutor",
+        "CMC": 2,
+        "Color": "Black"
+    };
 }
