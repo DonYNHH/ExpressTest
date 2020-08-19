@@ -12,7 +12,8 @@ app.get('/', (req, res) => {
 });
 
 
-app.get('/api/cards', expressCallback(getCardData));
+app.get('/api/cards/', expressCallback(getCardData));
+
 
 /*
 //Reads json file and applies it to variable card  

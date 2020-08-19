@@ -3,7 +3,11 @@
 export default function makeListCards(cardsdb){
     return async function listCards(){
         let cards = await cardsdb();
+        
         console.log("hello");
+        let isArr = Array.isArray(cards);
+        console.log(isArr);
+
         return cards;
     }
 }
